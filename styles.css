@@ -22,6 +22,7 @@ body {
 .calculator {
   width: 360px;
   height: 500px;
+  position: relative;
 }
 .result_container {
   width: 100%;
@@ -67,4 +68,42 @@ button:hover {
 .clear,
 .equals {
   grid-column: span 2;
+}
+.history {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid rgba(255, 255, 255, 0.1);
+}
+.history_title {
+  position: absolute;
+  font-size: 20px;
+  height: 24px;
+}
+.clear_history {
+  position: absolute;
+  width: 80%;
+  height: 24px;
+  font-size: 12px;
+  top: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  color: white;
+}
+.history-list {
+  position: absolute;
+  top: 70px;
+  list-style: none;
+}
+
+.history-item {
+  color: white;
 }
